@@ -10115,7 +10115,7 @@ header.masthead h1 {
 .pricing-panel-img {
   background: url('../assets/img/1.jpg');
   background-size: cover;
-  background-position: right;
+  background-position: left;
   min-height: 400px;
 }
 
