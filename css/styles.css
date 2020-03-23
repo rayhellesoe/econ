@@ -10115,14 +10115,14 @@ header.masthead h1 {
 .pricing-panel-img {
   background: url('../assets/img/1.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: right;
   min-height: 400px;
 }
 
 .subscribe-panel-img {
   background: url('../assets/img/2.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: right;
   min-height: 400px;
 }
 
