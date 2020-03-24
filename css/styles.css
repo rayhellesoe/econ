@@ -2012,23 +2012,23 @@ pre code {
   box-shadow: 0 0 0 0.2rem rgba(244, 98, 58, 0.25);
 }
 .form-control::-webkit-input-placeholder {
-  color: #6c757d;
+  color: #ced4da;
   opacity: 1;
 }
 .form-control::-moz-placeholder {
-  color: #6c757d;
+  color: #ced4da;
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-  color: #6c757d;
+  color: #ced4da;
   opacity: 1;
 }
 .form-control::-ms-input-placeholder {
-  color: #6c757d;
+  color: #ced4da;
   opacity: 1;
 }
 .form-control::placeholder {
-  color: #6c757d;
+  color: #ced4da;
   opacity: 1;
 }
 .form-control:disabled, .form-control[readonly] {
@@ -10117,7 +10117,7 @@ header.masthead h1 {
   background-size: cover;
   background-position: left;
   min-height: 400px;
-  max-height: 560px;
+  max-height: 590px;
 }
 
 .subscribe-panel-img {
