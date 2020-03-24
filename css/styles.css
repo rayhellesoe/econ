@@ -10117,6 +10117,7 @@ header.masthead h1 {
   background-size: cover;
   background-position: left;
   min-height: 400px;
+  max-height: 560px;
 }
 
 .subscribe-panel-img {
@@ -10124,10 +10125,42 @@ header.masthead h1 {
   background-size: cover;
   background-position: right;
   min-height: 400px;
+  max-height: 560px;
+}
+
+/* images for guide.html */
+
+.first-img {
+  background: url('../assets/img/first.jpg');
+  background-size: cover;
+  background-position: left;
+  min-height: 220px;
+  max-height: 300px;
+}
+
+.second-img {
+  background: url('../assets/img/second.jpg');
+  background-size: cover;
+  background-position: right;
+  min-height: 220px;
+  max-height: 300px;
+}
+
+.third-img {
+  background: url('../assets/img/third.jpg');
+  background-size: cover;
+  background-position: left;
+  min-height: 220px;
+  max-height: 300px;
 }
 
 .textarea {
   min-height: 150px;
+}
+
+.w-bg{
+  background: #fff !important;
+  padding-top: 0 !important;
 }
 
 
