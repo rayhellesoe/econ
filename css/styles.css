@@ -10210,3 +10210,11 @@ header.masthead h1 {
   font-weight: 700;
   border-bottom: 2px solid #27a8de;
 }
+
+.light-link{
+  color: #fff;
+}
+
+.light-link:hover, .light-link:focus{
+  color: rgba(255,255,255, 0.75);
+}
