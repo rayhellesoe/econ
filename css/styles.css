@@ -10039,7 +10039,7 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../assets/img/bg-masthead.jpg");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -10208,4 +10208,5 @@ header.masthead h1 {
 #selectCurrency > .selected {
   color: #27a8de;
   font-weight: 700;
+  border-bottom: 2px solid #27a8de;
 }
