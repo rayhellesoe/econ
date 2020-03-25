@@ -55,4 +55,19 @@
     }
   });
 
+  $("#selectCurrency").click(() => {
+    const nzdButton = $("#selectNZD")
+    const audButton = $("#selectAUD")
+
+    $(".currency-info").toggle();
+
+    if (nzdButton.hasClass("selected")) {
+      nzdButton.removeClass("selected");
+      audButton.addClass("selected");
+    } else {
+      audButton.removeClass("selected");
+      nzdButton.addClass("selected");
+    }
+  })
+
 })(jQuery); // End of use strict

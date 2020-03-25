@@ -10200,3 +10200,12 @@ header.masthead h1 {
   font-size: .7rem;
   font-weight: 700;
 }
+
+#selectCurrency {
+  cursor: pointer;
+}
+
+#selectCurrency > .selected {
+  color: #27a8de;
+  font-weight: 700;
+}
