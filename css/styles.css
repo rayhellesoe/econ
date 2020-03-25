@@ -10218,3 +10218,16 @@ header.masthead h1 {
 .light-link:hover, .light-link:focus{
   color: rgba(255,255,255, 0.75);
 }
+
+.sticky-footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+
+@media (max-height: 675px) {
+  .sticky-footer {
+    position: inherit;
+  }
+}
