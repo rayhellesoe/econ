@@ -55,19 +55,46 @@
     }
   });
 
-  $("#selectCurrency").click(() => {
-    const nzdButton = $("#selectNZD")
-    const audButton = $("#selectAUD")
+  $("#selectNZD").click(() => {
+    $("#currency-options").children().removeClass("selected")
+    $("#selectNZD").addClass("selected")
+    $("#currency-info").children().hide()
+    $(".aud-info").show()
+  })
 
-    $(".currency-info").toggle();
+  $("#selectAUD").click(() => {
+    $("#currency-options").children().removeClass("selected")
+    $("#selectAUD").addClass("selected")
+    $("#currency-info").children().hide()
+    $(".aud-info").show()
+  })
 
-    if (nzdButton.hasClass("selected")) {
-      nzdButton.removeClass("selected");
-      audButton.addClass("selected");
-    } else {
-      audButton.removeClass("selected");
-      nzdButton.addClass("selected");
-    }
+  $("#selectUSD").click(() => {
+    $("#currency-options").children().removeClass("selected")
+    $("#selectUSD").addClass("selected")
+    $("#currency-info").children().hide()
+    $(".usd-info").show()
+  })
+
+  $("#selectSING").click(() => {
+    $("#currency-options").children().removeClass("selected")
+    $("#selectSING").addClass("selected")
+    $("#currency-info").children().hide()
+    $(".sing-info").show()
+  })
+
+  $("#selectGBP").click(() => {
+    $("#currency-options").children().removeClass("selected")
+    $("#selectGBP").addClass("selected")
+    $("#currency-info").children().hide()
+    $(".gbp-info").show()
+  })
+
+  $("#selectEUR").click(() => {
+    $("#currency-options").children().removeClass("selected")
+    $("#selectEUR").addClass("selected")
+    $("#currency-info").children().hide()
+    $(".eur-info").show()
   })
 
 })(jQuery); // End of use strict

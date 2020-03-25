@@ -158,26 +158,76 @@
                 <div class="col-lg-6 col-md-6 side-panel">
                     <h2 class="mt-0">Pricing</h2>
                     <hr class="divider my-4" style="margin: 0" />
-                    <p class="text-muted" id="selectCurrency">
-                        <span style="font-weight: 700; margin-right: 10px;">SELECT CURRENCY: </span>
-                        <span id="selectNZD" class="selected">NZD</span> <span id="selectAUD">AUD</span></p>
-                    <div class="currency-info">
-                        <div class="pricing-card-price pricing-card-price-current">
-                            <span class="pricing-card-price-currency">$</span>
-                            <span class="pricing-card-price-base">1.60</span>
-                            <span class="pricing-card-price-frequency pricing-card-price-frequency-0"><span
-                                    class="pricing-card-price-frequency-slash">/</span> per day</span>
+                    <span style="font-weight: 700; margin-right: 10px;">SELECT CURRENCY: </span>
+                    <p class="text-muted" id="currency-options">
+                        <span id="selectNZD" class="selected">NZD</span> 
+                        <span id="selectAUD">AUD</span> 
+                        <span id="selectUSD">USD</span> 
+                        <span id="selectSING">SING</span> 
+                        <span id="selectGBP">GBP</span> 
+                        <span id="selectEUR">EUR</span>
+                    </p>
+                    <div id="currency-info">
+                        <!-- NZD section-->
+                        <div class="nzd-info">
+                            <div class="pricing-card-price pricing-card-price-current">
+                                <span class="pricing-card-price-currency">$</span>
+                                <span class="pricing-card-price-base">1.60</span>
+                                <span class="pricing-card-price-frequency pricing-card-price-frequency-0"><span
+                                        class="pricing-card-price-frequency-slash">/</span> per day</span>
+                            </div>
+                            <p class="text-muted" style="margin-top: -15px;">billed monthly at $48 plus GST</p>
                         </div>
-                        <p class="text-muted" style="margin-top: -15px;">billed monthly at $48 plus GST</p>
-                    </div>
-                    <div class="currency-info" style="display: none;">
-                        <div class="pricing-card-price pricing-card-price-current">
-                            <span class="pricing-card-price-currency">$</span>
-                            <span class="pricing-card-price-base">1.50</span>
-                            <span class="pricing-card-price-frequency pricing-card-price-frequency-0"><span
-                                    class="pricing-card-price-frequency-slash">/</span> per day</span>
+                        <!-- AUD section-->
+                        <div class="aud-info" style="display: none;">
+                            <div class="pricing-card-price pricing-card-price-current">
+                                <span class="pricing-card-price-currency">$</span>
+                                <span class="pricing-card-price-base">1.50</span>
+                                <span class="pricing-card-price-frequency pricing-card-price-frequency-0"><span
+                                        class="pricing-card-price-frequency-slash">/</span> per day</span>
+                            </div>
+                            <p class="text-muted" style="margin-top: -15px;">billed monthly at $45 plus GST</p>
                         </div>
-                        <p class="text-muted" style="margin-top: -15px;">billed monthly at $46 plus GST</p>
+                        <!-- USD section-->
+                        <div class="usd-info" style="display: none;">
+                            <div class="pricing-card-price pricing-card-price-current">
+                                <span class="pricing-card-price-currency">$</span>
+                                <span class="pricing-card-price-base">0.90</span>
+                                <span class="pricing-card-price-frequency pricing-card-price-frequency-0"><span
+                                        class="pricing-card-price-frequency-slash">/</span> per day</span>
+                            </div>
+                            <p class="text-muted" style="margin-top: -15px;">billed monthly at $28 plus GST</p>
+                        </div>
+                        <!-- SING section-->
+                        <div class="sing-info" style="display: none;">
+                            <div class="pricing-card-price pricing-card-price-current">
+                                <span class="pricing-card-price-currency">$</span>
+                                <span class="pricing-card-price-base">1.30</span>
+                                <span class="pricing-card-price-frequency pricing-card-price-frequency-0"><span
+                                        class="pricing-card-price-frequency-slash">/</span> per day</span>
+                            </div>
+                            <p class="text-muted" style="margin-top: -15px;">billed monthly at $40 plus GST</p>
+                        </div>
+                        <!-- GBP section-->
+                        <div class="gbp-info" style="display: none;">
+                            <div class="pricing-card-price pricing-card-price-current">
+                                <span class="pricing-card-price-currency">£</span>
+                                <span class="pricing-card-price-base">0.80</span>
+                                <span class="pricing-card-price-frequency pricing-card-price-frequency-0"><span
+                                        class="pricing-card-price-frequency-slash">/</span> per day</span>
+                            </div>
+                            <p class="text-muted" style="margin-top: -15px;">billed monthly at £24 plus GST</p>
+                        </div>
+                        <!-- EUR section-->
+                        <div class="eur-info" style="display: none;">
+                            <div class="pricing-card-price pricing-card-price-current">
+                                <span class="pricing-card-price-currency">€</span>
+                                <span class="pricing-card-price-base">0.90</span>
+                                <span class="pricing-card-price-frequency pricing-card-price-frequency-0"><span
+                                        class="pricing-card-price-frequency-slash">/</span> per day</span>
+                            </div>
+                            <p class="text-muted" style="margin-top: -15px;">billed monthly at €26 plus GST</p>
+                        </div>
                     </div>
                     <p class="text-muted mb-3">We offer unlimited video minutes, unlimited document transactions and
                         unlimited video recordings.</p>
