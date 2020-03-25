@@ -10039,7 +10039,7 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../assets/img/bg-masthead.jpg");
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -10115,7 +10115,7 @@ header.masthead h1 {
 .pricing-panel-img {
   background: url('../assets/img/1.jpg');
   background-size: cover;
-  background-position: left;
+  background-position: right;
   min-height: 400px;
   max-height: 590px;
 }
@@ -10123,7 +10123,7 @@ header.masthead h1 {
 .subscribe-panel-img {
   background: url('../assets/img/2.jpg');
   background-size: cover;
-  background-position: right;
+  background-position: left;
   min-height: 400px;
   max-height: 560px;
 }
