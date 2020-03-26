@@ -59,7 +59,7 @@
     $("#currency-options").children().removeClass("selected")
     $("#selectNZD").addClass("selected")
     $("#currency-info").children().hide()
-    $(".aud-info").show()
+    $(".nzd-info").show()
   })
 
   $("#selectAUD").click(() => {
