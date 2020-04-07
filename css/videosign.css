@@ -1,0 +1,263 @@
+/* ------------- */
+/* Common Styles */
+/* ------------- */
+
+body {
+  font-family: Roboto, Calibri, sans-serif;
+  overflow: hidden;
+}
+
+h3 {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #787878;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.no-float {
+  display: table-cell;
+  float: none;
+}
+
+.meeting-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns:
+    287px 1fr 19.09%;
+}
+
+/* ---------- */
+/* Left Panel */
+/* ---------- */
+
+.left-panel {
+  background: #fff;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.items {
+  padding-left: 5%;
+  margin-top: 13px;
+}
+
+.left-links {
+  display: inline-block;
+  font-size: 14px;
+  color: #26aae1;
+  padding: 4px 12px;
+}
+
+.logo-container {
+  min-height: 120px;
+  margin-right: calc(1.5 * 1vw);
+  padding-top: 24px;
+  padding-left: 7px;
+}
+
+.meeting-button {
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: top;
+  margin-left: -1px;
+  margin-right: 1px;
+}
+
+.upload {
+  content: url(../assets/sbxicons/icons-upload.svg);
+}
+
+.tosign {
+  content: url(../assets/sbxicons/icons-edit.svg);
+}
+
+.toread {
+  content: url(../assets/sbxicons/icons-folder.svg);
+}
+
+.signed {
+  content: url(../assets/sbxicons/icons-check-on.svg);
+}
+
+.recordings {
+  content: url(../assets/sbxicons/icons-video.svg);
+}
+
+.chat {
+  content: url(../assets/sbxicons/icons-chat.svg);
+}
+
+.startrec {
+  content: url(../assets/sbxicons/record.svg);
+}
+
+.refresh {
+  content: url(../assets/sbxicons/icons-refresh.svg);
+}
+
+.healthcheck {
+  content: url(../assets/sbxicons/icon-medical.svg);
+  padding: 2px;
+}
+
+.devices {
+  content: url(../assets/sbxicons/icon-shield.svg);
+  padding: 2px;
+}
+
+.logout {
+  content: url(../assets/sbxicons/icons-exit.svg);
+}
+
+.tools {
+  min-height: calc(1vh * 45);
+}
+
+@media (max-height: 830px) {
+  .tools {
+    min-height: 0;
+  }
+}
+
+
+/* ------------ */
+/* Center Panel */
+/* ------------ */
+
+.center-panel {
+  background: #f2f2f2;
+  height: 100vh;
+}
+
+.meeting-date {
+  min-height: calc(1vh*4.16);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.54);
+  margin-top: 4.16%;
+  float: left !important;
+  margin-left: 7.35%;
+  margin-right: 22.06%;
+}
+
+.meeting-timer {
+  min-height: calc(1vh*4.16);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.54);
+  margin-top: 4.16%;
+  margin-right: 7%;
+  margin-left: 7.35%;
+  float: right !important;
+}
+
+.meeting-title {
+  min-height: calc(1vh*6.77);
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.87);
+  float: left;
+  margin-left: 7.35%;
+  margin-right: 22.06%;
+}
+
+.media-control-panel {
+  border-radius: 8px;
+  background-color: white;
+  top: 92vh;
+  left: 39vw;
+  position: absolute;
+  display: block;
+  width: 280px;
+  height: calc(1vh * 10);
+  z-index: 999;
+  padding-top: 0.2%;
+  -webkit-box-shadow: 0px -1px 15px -9px #3d3b3d;
+  box-shadow: 0px -1px 15px -9px #3d3b3d;
+}
+
+
+/* ----------- */
+/* Right Panel */
+/* ----------- */
+
+.right-panel {
+  padding: 15px 15px;
+}
+
+.webcam-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 13px;
+  row-gap: 19px
+}
+
+.first-cam {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  height:288px;
+}
+
+.second-cam {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.third-cam {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.fourth-cam {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.first-cam, .second-cam, .third-cam, .fourth-cam {
+  border-radius: 8px;
+  background: #a3a6a7;
+}
+
+.second-cam, .third-cam, .fourth-cam {
+  height:134px;
+}
+
+.innerdiv {
+  min-width: calc(1vw*18);
+  width: 100%;
+  height: 100vh;
+}
