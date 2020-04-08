@@ -244,8 +244,7 @@
                 Complete
             </div>
             <div 
-                class="btn-tool-menu doc-tooltip"
-                id="close-document"
+                class="btn-tool-menu doc-tooltip close-document"
                 data-toggle="modal" 
                 data-target="#tooltip-message"
                 data-tool-title="Close"
@@ -267,25 +266,25 @@
                 </div>
             </div>
             <div class="meeting-title">
-                Getting Started with eContract
+                Getting Started with VideoSign
             </div>
             <div class="view-doc-container">
                 <span style="display: block; margin-bottom: 30px;">
-                    You can explore the features of your room by rolling over the buttons.
+                    You can explore the features of your virtual office by rolling over the buttons.
                 </span>
                 <button class="btn-open-doc" id="open-document">
                     View Document
                 </button>
                 <span style="display: block; margin-top: 30px;">
-                    <img src="assets/chrome-logo.png" alt="Please use Google Chrome" style="width:35px; margin-right: 10px;"> We strongly recommend the use of 
-                    <a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a>
+                    <img src="assets/chrome-logo.png" alt="Please use Google Chrome" style="width:35px; margin-right: 10px;"> We strongly recommend the use of Google Chrome. 
+                    <a href="https://www.google.com/chrome/" target="_blank">Download now.</a>
                 </span>
             </div>
         </div>
 
         <!-- Document View -->
         <div class="doc-view hide-element">
-            <iframe src="nzi-form.pdf#view=FitH"></iframe>
+            <iframe src="anz-loan-application.pdf#view=FitH"></iframe>
         </div>
 
         <!-- Right Panel -->
@@ -317,22 +316,50 @@
                     </div>
                 </div>
             </div>
+            
+            <button class="btn-close-doc close-document hide-element">
+                Close Document
+            </button>
         </div>
     </div>
 
     <div class="stream-control-menu">
         <div class="toggle-stream-controls" id="toggle-media-controls"><div class="bar"></div></div>
         <div class="stream-controls">
-            <div class="stream-control-option blue-icon">
+            <div 
+                class="stream-control-option blue-icon"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Screensharing"
+                data-tool-message="This is the only feature that requires you to download a plugin but only takes a minute to complete after a refresh you will be able to commence screen sharing. The Screen sharing feature is the most popular feature in most video conference systems it will enable to share anything on your computer with your participants. It is very important that you carefully select which windows you wish to share. To make it even easier to view the participants have the option to click on what you are sharing to display this full screen."
+            >
                 <div class="screenshare-icon"></div>
             </div>
-            <div class="stream-control-option green-icon">
+            <div 
+                class="stream-control-option green-icon"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Toggle Audio and Video"
+                data-tool-message="You have full control to turn on or off audio and video functions during a meeting this is an important feature to ensure your meeting runs smoothly."
+            >
                 <div class="mic-icon"></div>
             </div>
-            <div class="stream-control-option green-icon"">
+            <div 
+                class="stream-control-option green-icon"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Toggle Audio and Video"
+                data-tool-message="You have full control to turn on or off audio and video functions during a meeting this is an important feature to ensure your meeting runs smoothly."
+            >
                 <div class="cam-icon"></div>
             </div>
-            <div class="stream-control-option blue-icon">
+            <div 
+                class="stream-control-option blue-icon"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Switch Cameras"
+                data-tool-message="If you have multiple cameras you are able to use this feature to switch what you want people to see."
+            >
                 <div class="switch-cam-icon"></div>
             </div>
         </div>
@@ -360,7 +387,6 @@
             <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title"></h5>
-                </button>
             </div>
             <div class="modal-body">
                 <p></p>

@@ -20,8 +20,8 @@ $(document).ready(function () {
         $("#tooltip-message").modal('hide')
     })
 
-    // Tooltips for Document Controls
-    $(".doc-tooltip").mouseenter((e) => {
+    // Tooltips for Document and Media Controls
+    $(".doc-tooltip, .stream-control-option").mouseenter((e) => {
         const myEl = e.currentTarget
         const title = myEl.dataset.toolTitle
         const message = myEl.dataset.toolMessage
@@ -31,7 +31,7 @@ $(document).ready(function () {
         $("#tooltip-message").modal('show')
     })
 
-    $(".doc-tooltip").mouseleave((e) => {
+    $(".doc-tooltip, .stream-control-option").mouseleave((e) => {
         $("#tooltip-message").modal('hide')
     })
 
@@ -42,14 +42,16 @@ $(document).ready(function () {
         $(".doc-view, .tool-menu").removeClass("hide-element")
         $(".meeting-grid").addClass("doc-view-enabled")
         $("hr").addClass("half-hr")
+        $(".btn-close-doc").removeClass("hide-element")
     })
 
-    $("#close-document").click(() => {
+    $(".close-document").click(() => {
         $(".logo-image, .menu-heading, .left-links, .center-panel").removeClass("hide-element")
         $(".meeting-button").css("text-align", "left")
         $(".doc-view, .tool-menu").addClass("hide-element")
         $(".meeting-grid").removeClass("doc-view-enabled")
         $("hr").removeClass("half-hr")
+        $(".btn-close-doc").addClass("hide-element")
     })
 
     // Toggle media controls
