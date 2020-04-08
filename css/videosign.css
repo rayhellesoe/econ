@@ -167,6 +167,11 @@ iframe {
   grid-template-columns: 93px 248px 1fr 19.09%;
 }
 
+.half-hr {
+  width: 50%;
+  float: right;
+}
+
 /* ------------------ */
 /* Document Tool Menu */
 /* ------------------ */
@@ -208,6 +213,7 @@ iframe {
   padding-top: 3%;
   text-align: center;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 .doc-tooltip:hover{
@@ -305,12 +311,17 @@ iframe {
   text-align: center;
   border: none;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-open-doc:hover {
+  background-color: #1d80aa;
 }
 
 .view-doc-container {
   display: inline-block;
   width: 100%;
-  padding-top: 31vh
+  padding-top: 25vh;
 }
 
 
@@ -354,14 +365,20 @@ iframe {
   background: url("../assets/interactive/fourth-ppt.png") !important;
 }
 
-.first-cam, .second-cam, .third-cam, .fourth-cam {
+.fifth-cam {
+  grid-column: 2;
+  grid-row: 3;
+  background: url("../assets/interactive/fifth-ppt.png") !important;
+}
+
+.first-cam, .second-cam, .third-cam, .fourth-cam, .fifth-cam {
   border-radius: 8px;
   background-position: center !important;
   background-size: cover !important;
   position: relative;
 }
 
-.second-cam, .third-cam, .fourth-cam {
+.second-cam, .third-cam, .fourth-cam, .fifth-cam {
   height:14.15vh;
 }
 
@@ -381,4 +398,109 @@ iframe {
   bottom: 0;
   width: 100%;
   border-radius: 0 0 5px 5px;
+}
+
+
+/* ------------------- */
+/* Stream Control Menu */
+/* ------------------- */
+
+.stream-control-menu {
+  border-radius: 8px 8px 0 0;
+  background-color: white;
+  bottom: 0;
+  left: 39vw;
+  position: absolute;
+  display: block;
+  width: 280px;
+  height: 76px;
+  z-index: 999;
+  padding-top: 0.2%;
+  -webkit-box-shadow: 0px -1px 15px -9px #3d3b3d;
+  box-shadow: 0px -1px 15px -9px #3d3b3d;
+  text-align: center;
+}
+
+.hide-menu-controls {
+  bottom: -56px;
+}
+
+.toggle-stream-controls {
+  float: left;
+  margin-bottom: 1.4%;
+  width: 100%;
+  padding-left: 45%;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.bar {
+  top: 0;
+  background-color: #C5C7C8;
+  width: 28px;
+  height: 5px;
+  border-radius: 28px;
+  float: left;
+}
+
+.stream-control-option {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 28px;
+  margin-left: 8.5%;
+  padding-top: 7px;
+  text-align: center;
+}
+
+.blue-icon {
+  background: #546ab0;
+}
+
+.green-icon {
+  background: #6bc86a;
+}
+
+.screenshare-icon {
+  background-image: url("../assets/sbxicons/icons-screen-share.png");
+}
+
+.mic-icon {
+  background-image: url("../assets/sbxicons/icons-mic.png");
+}
+
+.cam-icon {
+  background-image: url("../assets/sbxicons/icons-video.png");
+}
+
+.switch-cam-icon {
+  background-image: url("../assets/sbxicons/icons-camera-switch.png");
+}
+
+.screenshare-icon, .mic-icon, .cam-icon, .switch-cam-icon {
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+}
+
+/* ---------------------- */
+/* Mobile Warning Message */
+/* ---------------------- */
+
+.mobile-warning-message {
+  display:none;
+  text-align: center;
+  padding-top: 10vh;
+}
+
+@media (max-width: 997px) {
+  .meeting-grid, .stream-control-menu {
+    display:none;
+  }
+
+  .mobile-warning-message {
+    display:block;
+  }
 }

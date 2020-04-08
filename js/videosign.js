@@ -8,12 +8,15 @@ $(document).ready(function () {
         const title = myEl.dataset.toolTitle
         const message = myEl.dataset.toolMessage
 
+        $(myEl).css("font-weight", "700")
+
         $('.modal-title').html(title)
         $('.modal-body').html(message)
         $("#tooltip-message").modal('show')
     })
 
     $(".meeting-button").mouseleave((e) => {
+        $(e.currentTarget).css("font-weight", "400")
         $("#tooltip-message").modal('hide')
     })
 
@@ -38,6 +41,7 @@ $(document).ready(function () {
         $(".meeting-button").css("text-align", "right")
         $(".doc-view, .tool-menu").removeClass("hide-element")
         $(".meeting-grid").addClass("doc-view-enabled")
+        $("hr").addClass("half-hr")
     })
 
     $("#close-document").click(() => {
@@ -45,5 +49,11 @@ $(document).ready(function () {
         $(".meeting-button").css("text-align", "left")
         $(".doc-view, .tool-menu").addClass("hide-element")
         $(".meeting-grid").removeClass("doc-view-enabled")
+        $("hr").removeClass("half-hr")
+    })
+
+    // Toggle media controls
+    $("#toggle-media-controls").click(function(){
+        $(".stream-control-menu").toggleClass("hide-menu-controls");
     })
 })
