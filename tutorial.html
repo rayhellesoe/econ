@@ -25,10 +25,10 @@
     <div class="meeting-grid">
         <div class="left-panel no-float">
             <div class="logo-container">
-                <img src="assets/sbxlogo.png" alt="eContract Logo">
+                <a href="index.html"><img class="logo-image" src="assets/sbxlogo.png" alt="eContract Logo"></a>
             </div>
             <div class="meeting-resources">
-                <h3>MEETING RESOURCES</h3>
+                <h3 class="menu-heading">MEETING RESOURCES</h3>
                 <div class="items">
                     <div
                         class="meeting-button" 
@@ -85,7 +85,7 @@
             </div>
             <hr>
             <div class="tools">
-                <h3>TOOLS</h3>
+                <h3 class="menu-heading">TOOLS</h3>
                 <div class="items">
                     <div
                         class="meeting-button" 
@@ -156,6 +156,99 @@
             </div>
         </div>
 
+        <!-- Document Tool menu -->
+        <div class="tool-menu hide-element">
+            <h2 class="document-name">NZI Motor Vehicle Claim Form.pdf</h2>
+
+            <span class="tag">SIGNEES</span>
+            <div 
+                class="btn-tool-menu doc-tooltip"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="General Tag"
+                data-tool-message="This is a very useful feature if you need to sign in several locations within a single document."
+            >
+                General Tag
+            </div>
+            <div class="btn-tool-menu">
+                Thomas Holt
+            </div>
+            <div class="btn-tool-menu">
+                Amanda Jones
+            </div>
+            <div class="btn-tool-menu">
+                Steven Thompson
+            </div>
+            <div class="btn-tool-menu">
+                Sharon Teague
+            </div>
+            <div class="btn-tool-menu">
+                Prev Signature
+            </div>
+            <div class="btn-tool-menu">
+                Next Signature
+            </div>
+
+            <span class="tag">ADD</span>
+            <div 
+                class="btn-tool-menu doc-tooltip"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Add Signature"
+                data-tool-message="You will be given the option to sign in a number of different ways you can use a saved signature or type your name these are also legally accepted. When you use this signing function you will be recorded so your identity can be verified. To ensure maximum compliance your meta data will be recorded and added to the PDF for security your signature and metadata can not be deleted."
+            >
+                Add Signature
+            </div>
+            <div 
+                class="btn-tool-menu doc-tooltip"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Add Initials"
+                data-tool-message="You can add your initials to a document and are able to sign once and then re plant on other pages within the document."
+            >
+                Add Initials
+            </div>
+            <div 
+                class="btn-tool-menu doc-tooltip"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Add Text"
+                data-tool-message="You can add text to any document."
+            >
+                Add Text
+            </div>
+            <div 
+                class="btn-tool-menu doc-tooltip"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Add File"
+                data-tool-message="You can add any image to a document the most popular is a photo ID for verification."
+            >
+                Add File
+            </div>
+
+            <span class="tag">DOCUMENT</span>
+            <div 
+                class="btn-tool-menu doc-tooltip"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Complete your Document"
+                data-tool-message="Once you complete a signing process you must always push complete to save your signatures."
+            >
+                Complete
+            </div>
+            <div 
+                class="btn-tool-menu doc-tooltip"
+                id="close-document"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Close"
+                data-tool-message="It is always best close the document after a signing process before accessing other features."
+            >
+                Close
+            </div>
+        </div>
+
         <!-- Center Panel -->
         <div class="center-panel">
             <div>
@@ -169,6 +262,20 @@
             <div class="meeting-title">
                 Getting Started with eContract
             </div>
+            <div class="view-doc-container">
+                <button class="btn-open-doc" id="open-document">
+                    View Document
+                </button>
+                <span style="display: block; margin-top: 30px;">
+                    <img src="assets/chrome-logo.png" alt="Please use Google Chrome" style="width:35px;"> We strongly recommend the use of 
+                    <a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a>
+                </span>
+            </div>
+        </div>
+
+        <!-- Document View -->
+        <div class="doc-view hide-element">
+            <iframe src="nzi-form.pdf#view=FitH"></iframe>
         </div>
 
         <!-- Right Panel -->
