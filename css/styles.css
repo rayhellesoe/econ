@@ -10041,11 +10041,13 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../assets/img/bg-masthead.jpg");
-  background-position: center;
+  background-color: #00a2e6;
+  position: relative;
+  /* background-image: url("../assets/img/masthead.png");
+  background-position: right bottom;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: 130vh; */
 }
 header.masthead h1 {
   font-size: 2.25rem;
@@ -10282,5 +10284,169 @@ header.masthead h1 {
   .tm-masthead {
     font-size: 1rem;
     vertical-align: 14px;
+  }
+}
+
+.masthead-content {
+  z-index: 100;
+  display: inline-block;
+  margin-top: 9vh;
+}
+
+.masthead-title {
+  color: #fff;
+}
+
+.masthead-title-tagline-sm {
+  font-size: 3.5vw;
+  font-weight: 300;
+}
+
+.masthead-title-tagline-l {
+  font-size: 6.5vw;
+  font-weight: 700;
+}
+
+.masthead-subtitle {
+  font-size: 3.5vw;
+  color: #000;
+  text-align: center;
+  font-weight: 300;
+}
+
+.masthead-text {
+  font-size: 20px !important;
+  color: #000;
+  width: 35vw;
+  margin-top: 5vh;
+  font-weight: 300;
+}
+
+.masthead-desktop {
+  display: block;
+}
+
+.masthead-mobile {
+ display: none; 
+}
+
+.masthead-image {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url("../assets/img/masthead.png");
+  background-repeat: no-repeat;  
+  background-position: bottom right;
+  background-size: 130vh;
+  z-index: 2;
+}
+
+.masthead-button-row {
+  height: 19.25vh;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #e4e4e4;
+  padding-top: 5.4vh;
+}
+
+.masthead-hightlight {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../assets/img/highlight.png");
+  background-repeat: no-repeat;  
+  background-position: top left;
+  background-size: 87.5vh;
+}
+
+.mast-btn-1, .mast-btn-2 {
+  border-radius: 0 !important;
+}
+
+.mast-btn-1 {
+  background: #00aeea;
+  color: #000;
+  margin: 0;
+}
+
+.mast-btn-1:hover, .mast-btn-1:active, .mast-btn-1:focus {
+  background: #008bd0 !important;
+  border: none;
+}
+
+.mast-btn-2 {
+  background: #008bd0;
+  color: #fff;
+  margin: 0;
+}
+
+
+
+@media (max-width: 995px) {
+  .masthead-title {
+    text-align: left;
+    display: inline-block;
+  }
+
+  .masthead-desktop {
+    display: none;
+  }
+  
+  .masthead-mobile {
+   display: block; 
+  }
+
+  header.masthead {
+    background: #0099dd;
+    padding-top: 7rem;
+    padding-bottom: 0;
+    background-image: url("../assets/img/highlight-light.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 43.5vh;
+  }
+
+  .mast-btn-1 {
+    background: #00aeea;
+  }
+
+  .mast-btn-2 {
+    background: #008bd0;
+  }
+
+  .masthead-subtitle, .masthead-title-tagline-sm {
+    font-size: 6.5vw;
+  }
+
+  .masthead-title-tagline-l {
+    font-size: 10.5vw;
+  }
+
+  .masthead-subtitle {
+    margin-bottom: 5vh;
+  }
+}
+
+@media (min-width: 1300px) {
+  .masthead-title-tagline-sm {
+    font-size: 3vw;
+  }
+  
+  .masthead-title-tagline-l {
+    font-size: 5vw;
+  }
+
+  .masthead-subtitle {
+    font-size: 3vw;
+  }
+
+  .masthead-text {
+    font-size: 18px;
   }
 }
