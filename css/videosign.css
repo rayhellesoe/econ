@@ -8,6 +8,14 @@ body {
   padding-right: 0 !important;
 }
 
+.carousel-caption {
+  position: initial;
+}
+
+.tool-menu > h2 {
+  color: #fff;
+}
+
 a {
   color: #26aae1;
 }
@@ -479,7 +487,7 @@ iframe {
 }
 
 .blue-icon {
-  background: #546ab0;
+  background: #26aae1;
 }
 
 .green-icon {

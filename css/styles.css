@@ -6129,7 +6129,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #00264d !important;
+  background-color: #27a8de !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -10118,9 +10118,9 @@ header.masthead h1 {
 }
 
 .pricing-panel-img {
-  background: url('../assets/img/1.jpg');
+  background: url('../assets/img/1-long.jpg');
   background-size: cover;
-  background-position: right;
+  background-position: center;
   min-height: 400px;
   max-height: 770px;
 }
@@ -10249,7 +10249,8 @@ header.masthead h1 {
   text-align: center;  
   padding: 10px 18px !important;  
   display: inline;
-  border-radius: 3px;
+  text-transform: uppercase;
+  /* border-radius: 3px; */
 }
 
 .login-btn:hover {
@@ -10287,10 +10288,19 @@ header.masthead h1 {
   }
 }
 
+.white-line {
+  border-bottom: 3px solid #fff;
+  top: 77px;
+  padding-top: 10px;
+  z-index: 2;
+  position: absolute;
+}
+
 .masthead-content {
   z-index: 100;
   display: inline-block;
   margin-top: 9vh;
+  padding-left: 10px;
 }
 
 .masthead-title {
@@ -10305,20 +10315,22 @@ header.masthead h1 {
 .masthead-title-tagline-l {
   font-size: 6.5vw;
   font-weight: 700;
+  letter-spacing: -6px;
 }
 
 .masthead-subtitle {
   font-size: 3.5vw;
   color: #000;
-  text-align: center;
-  font-weight: 300;
+  /* text-align: center; */
+  font-weight: 700;
+  letter-spacing: -3px;
 }
 
 .masthead-text {
   font-size: 20px !important;
   color: #000;
-  width: 35vw;
-  margin-top: 5vh;
+  /* width: 35vw; */
+  margin-top: 8.5vh;
   font-weight: 300;
 }
 
@@ -10345,38 +10357,41 @@ header.masthead h1 {
 
 .masthead-button-row {
   height: 19.25vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
   background: #e4e4e4;
-  padding-top: 5.4vh;
+  padding-top: 6.9vh;
 }
 
 .masthead-hightlight {
   height: 100vh;
-  width: 100vw;
+  width: 95vw;
   position: absolute;
   top: 0;
   left: 0;
   background-image: url("../assets/img/highlight.png");
   background-repeat: no-repeat;  
   background-position: top left;
-  background-size: 87.5vh;
+  background-size: 92vh;
 }
 
 .mast-btn-1, .mast-btn-2 {
   border-radius: 0 !important;
+  font-size: 20px;
+  padding: 14px 10px;
+  width: 150px !important;
 }
 
 .mast-btn-1 {
-  background: #00aeea;
+  background: #e96d2d;
   color: #000;
   margin: 0;
 }
 
 .mast-btn-1:hover, .mast-btn-1:active, .mast-btn-1:focus {
-  background: #008bd0 !important;
+  background: #bd5724 !important;
   border: none;
 }
 
@@ -10404,7 +10419,7 @@ header.masthead h1 {
 
   header.masthead {
     background: #0099dd;
-    padding-top: 7rem;
+    padding-top: 6rem;
     padding-bottom: 0;
     background-image: url("../assets/img/highlight-light.png");
     background-repeat: no-repeat;
@@ -10412,8 +10427,26 @@ header.masthead h1 {
     background-size: 43.5vh;
   }
 
+  .white-line {
+    top: 77px;
+  }
+
+  .mast-btn-1, .mast-btn-2 {
+    border-radius: 0 !important;
+    font-size: 14px;
+    padding: 11px 10px;
+    width: 126px !important;
+  }
+
   .mast-btn-1 {
-    background: #00aeea;
+    background: #e96d2d;
+    color: #000;
+    margin: 0;
+  }
+  
+  .mast-btn-1:hover, .mast-btn-1:active, .mast-btn-1:focus {
+    background: #bd5724 !important;
+    border: none;
   }
 
   .mast-btn-2 {
@@ -10426,10 +10459,11 @@ header.masthead h1 {
 
   .masthead-title-tagline-l {
     font-size: 10.5vw;
+    letter-spacing: -3px;
   }
 
   .masthead-subtitle {
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
   }
 }
 
