@@ -76,6 +76,10 @@ $(document).ready(function () {
         $("#tooltip-message").modal('show')
     })
 
+    $(".btn-control").mouseleave(function(){
+        $("#tooltip-message").modal('hide')
+    })
+
     $(".cam").mouseenter(function(){
         $('.modal-title').html("Upto 5 Live Cameras")
         $('.modal-body').html("VideoSign accommodates for up to 5 people within your virtual office. You will always appear small to yourself and big to others in your room. You can always turn off you video if it is not appropriate or you have a poor internet connection. Once you have created a VideoSign workspace you can use it anytime you like. The host does not need to be present and in this case other invitees can meet each other at anytime. When documents are uploaded everyone in your room will be notified by email.")
