@@ -385,6 +385,10 @@ iframe {
   background: url("../assets/interactive/fifth-ppt.png") !important;
 }
 
+.cam {
+  z-index: 99999;
+}
+
 .first-cam, .second-cam, .third-cam, .fourth-cam, .fifth-cam {
   border-radius: 8px;
   background-position: center !important;
@@ -425,10 +429,34 @@ iframe {
   cursor: pointer;
   transition: 0.3s;
   position: absolute;
-  bottom: 15px;
+  bottom: 80px;
 }
 
 .btn-close-doc:hover {
+  background-color: #cf5711;
+}
+
+.btn-control-doc-open {
+  bottom: 22px !important;
+  transition: 0s !important;
+}
+
+.btn-control {
+  width: calc(100% - 30px);
+  height: 50px;
+  border-radius: 3px;
+  background: #ec681c;
+  color: #fff;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  bottom: 15px;
+  z-index: 99999;
+}
+
+.btn-control:hover {
   background-color: #cf5711;
 }
 
