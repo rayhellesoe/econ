@@ -10393,6 +10393,7 @@ header.masthead h1 {
 .mast-btn-1:hover, .mast-btn-1:active, .mast-btn-1:focus {
   background: #bd5724 !important;
   border: none;
+  color: #fff;
 }
 
 .mast-btn-2 {
@@ -10440,13 +10441,14 @@ header.masthead h1 {
 
   .mast-btn-1 {
     background: #e96d2d;
-    color: #000;
+    color: #fff;
     margin: 0;
   }
   
   .mast-btn-1:hover, .mast-btn-1:active, .mast-btn-1:focus {
     background: #bd5724 !important;
     border: none;
+    color: #fff;
   }
 
   .mast-btn-2 {
