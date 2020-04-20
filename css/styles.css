@@ -10185,21 +10185,21 @@ header.masthead h1 {
   .side-panel {
     padding: 96px 15px !important;
   }
-}
 
-.smallbusiness-panel-img {
-  background: url('../assets/img/3-long.jpg');
-  background-size: cover;
-}
-
-.price-sm {
-  font-size: 3.5rem !important;
-  margin: 15px 0;
-  display: block;
-}
-
-.price-text-sm > strong{
-  display: block;
+  .smallbusiness-panel-img {
+    background: url('../assets/img/3-long.jpg');
+    background-size: cover;
+  }
+  
+  .price-sm {
+    font-size: 3.5rem !important;
+    margin: 15px 0;
+    display: block;
+  }
+  
+  .price-text-sm > strong{
+    display: block;
+  }
 }
 
 .pricing-card-price {
