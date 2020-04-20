@@ -97,4 +97,48 @@
     $(".eur-info").show()
   })
 
+  // Small Package Pricing
+
+  $("#smSelectNZD").click(() => {
+    $("#currency-options-sm").children().removeClass("selected")
+    $("#smSelectNZD").addClass("selected")
+    $("#currency-info-sm").children().hide()
+    $(".nzd-info-sm").show()
+  })
+
+  $("#smSelectAUD").click(() => {
+    $("#currency-options-sm").children().removeClass("selected")
+    $("#smSelectAUD").addClass("selected")
+    $("#currency-info-sm").children().hide()
+    $(".aud-info-sm").show()
+  })
+
+  $("#smSelectUSD").click(() => {
+    $("#currency-options-sm").children().removeClass("selected")
+    $("#smSelectUSD").addClass("selected")
+    $("#currency-info-sm").children().hide()
+    $(".usd-info-sm").show()
+  })
+
+  $("#smSelectSING").click(() => {
+    $("#currency-options-sm").children().removeClass("selected")
+    $("#smSelectSING").addClass("selected")
+    $("#currency-info-sm").children().hide()
+    $(".sing-info-sm").show()
+  })
+
+  $("#smSelectGBP").click(() => {
+    $("#currency-options-sm").children().removeClass("selected")
+    $("#smSelectGBP").addClass("selected")
+    $("#currency-info-sm").children().hide()
+    $(".gbp-info-sm").show()
+  })
+
+  $("#smSelectEUR").click(() => {
+    $("#currency-options-sm").children().removeClass("selected")
+    $("#smSelectEUR").addClass("selected")
+    $("#currency-info-sm").children().hide()
+    $(".eur-info-sm").show()
+  })
+
 })(jQuery); // End of use strict

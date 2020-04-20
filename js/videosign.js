@@ -72,7 +72,7 @@ $(document).ready(function () {
 
     $(".btn-control").mouseenter(function(){
         $('.modal-title').html("Give and Take Control")
-        $('.modal-body').html("This feature controls your virtual office you need to remember that you have to give control or take control to access any of the features in your room. Even when you join the room you have to take control before preforming features like upload document.")
+        $('.modal-body').html("This feature controls your Virtual Office you need to remember that you have to give control or take control to access any of the features in your room. Even when you join the room you have to take control before preforming features like upload document.")
         $("#tooltip-message").modal('show')
     })
 
@@ -82,7 +82,7 @@ $(document).ready(function () {
 
     $(".cam").mouseenter(function(){
         $('.modal-title').html("Upto 5 Live Cameras")
-        $('.modal-body').html("VideoSign accommodates for up to 5 people within your virtual office. You will always appear small to yourself and big to others in your room. You can always turn off you video if it is not appropriate or you have a poor internet connection. Once you have created a VideoSign workspace you can use it anytime you like. The host does not need to be present and in this case other invitees can meet each other at anytime. When documents are uploaded everyone in your room will be notified by email.")
+        $('.modal-body').html("VideoSign accommodates for up to 5 people within your Virtual Office. You will always appear small to yourself and big to others in your room. You can always turn off you video if it is not appropriate or you have a poor internet connection. Once you have created a VideoSign workspace you can use it anytime you like. The host does not need to be present and in this case other invitees can meet each other at anytime. When documents are uploaded everyone in your room will be notified by email.")
         $("#tooltip-message").modal('show')
     })
 

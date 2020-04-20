@@ -10133,6 +10133,14 @@ header.masthead h1 {
   max-height: 560px;
 }
 
+.smallbusiness-panel-img {
+  background: url('../assets/img/3.jpg');
+  background-size: cover;
+  background-position: left;
+  min-height: 400px;
+  max-height: 810px;
+}
+
 /* images for guide.html */
 
 .first-img {
@@ -10170,13 +10178,28 @@ header.masthead h1 {
 
 
 @media (max-width: 675px) {
-  .pricing-panel-img, .subscribe-panel-img {
+  .pricing-panel-img, .subscribe-panel-img, .smallbusiness-panel-img {
     min-height:200px
   }
   
   .side-panel {
     padding: 96px 15px !important;
   }
+}
+
+.smallbusiness-panel-img {
+  background: url('../assets/img/3-long.jpg');
+  background-size: cover;
+}
+
+.price-sm {
+  font-size: 3.5rem !important;
+  margin: 15px 0;
+  display: block;
+}
+
+.price-text-sm > strong{
+  display: block;
 }
 
 .pricing-card-price {
@@ -10206,11 +10229,11 @@ header.masthead h1 {
   font-weight: 700;
 }
 
-#currency-options {
+#currency-options, #currency-options-sm {
   cursor: pointer;
 }
 
-#currency-options > .selected {
+#currency-options > .selected, #currency-options-sm > .selected {
   color: #27a8de;
   font-weight: 700;
   border-bottom: 2px solid #27a8de;
