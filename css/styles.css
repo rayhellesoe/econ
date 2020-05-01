@@ -10509,3 +10509,7 @@ header.masthead h1 {
     font-size: 18px;
   }
 }
+
+.logo-center {
+  margin-top: -3px;
+}

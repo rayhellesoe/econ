@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>eContract - Tutorial</title>
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/styles.css?d=160420" rel="stylesheet" />
+    <link href="css/videosign.css?d=160420" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Left Panel -->
+    <div class="meeting-grid">
+        <div class="left-panel no-float">
+            <div class="logo-container">
+                <a href="index.html"><img class="logo-image" src="assets/videosign-logo.png" alt="eContract Logo"></a>
+            </div>
+            <div class="meeting-resources">
+                <h3 class="menu-heading">MEETING RESOURCES</h3>
+                <div class="items">
+                    <div
+                        class="meeting-button" 
+                        data-toggle="modal" 
+                        data-target="#tooltip-message"
+                        data-tool-title="Upload Document"
+                        data-tool-message="You can upload PDF documents to sign or read but need to ensure you have control before using this feature. When you click upload document a dialogue box will ask weather you need to sign or read the document. You are then able to browse your drive to select the PDF document you wish to share. Once uploaded you then need to access the document from either the document to sign or document to read buttons."
+                    >
+                        <span class="icon upload"></span>
+                        <span class="left-links">Upload Document</span>
+                    </div>
+                    <div
+                        class="meeting-button" 
+                        data-toggle="modal" 
+                        data-target="#tooltip-message"
+                        data-tool-title="Documents to Sign"
+                        data-tool-message="You can only sign PDF documents. You are able to upload upto 10 documents  during a single upload but it is recommended to do one at a time. It is also best to pre-plan where you would like to store the document after signing."
+                    >
+                        <span class="icon tosign"></span>
+                        <span class="left-links">Documents to Sign</span>
+                    </div>
+                    <div
+                        class="meeting-button" 
+                        data-toggle="modal" 
+                        data-target="#tooltip-message"
+                        data-tool-title="Documents to Read"
+                        data-tool-message="You can upload 10 documents at once but it is recommended to do one at a time. It is also best to pre-plan where you would like to store the document after reading. You can upload a document anytime for other participates to read at their convenience. You can create video minutes from documents you are reviewing and leave these recordings in the room for other participates to view."
+                    >
+                        <span class="icon toread"></span>
+                        <span class="left-links">Documents to Read</span>
+                    </div>
+                    <div
+                        class="meeting-button" 
+                        data-toggle="modal" 
+                        data-target="#tooltip-message"
+                        data-tool-title="Signed Documents"
+                        data-tool-message="Once a document is finalised and digitally certified the document will be shifted into the signed document folder. You are then able to send or store this document to your personal filing system. The signed document is now a validated digital signature with evidential video recordings and detailed audit records of signing events. With VideoSign™ Proof of Signature, you see who signs and you can capture intent and understanding to prevent agreements being challenged at a later date."
+                        style="margin-top: -1px;"
+                    >
+                        <span class="icon signed"></span>
+                        <span class="left-links">Signed Document</span>
+                    </div>
+                    <div
+                        class="meeting-button" 
+                        data-toggle="modal" 
+                        data-target="#tooltip-message"
+                        data-tool-title="Video Recordings"
+                        data-tool-message="Recordings will automatically start when you commence the signing process. This is also the location where you can access any meeting recording from this room. Each meeting room has its own secure recording area."
+                    >
+                        <span class="icon recordings"></span>
+                        <span class="left-links">Video Recordings</span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="tools">
+                <h3 class="menu-heading">TOOLS</h3>
+                <div class="items">
+                    <div
+                        class="meeting-button" 
+                        data-toggle="modal" 
+                        data-target="#tooltip-message"
+                        data-tool-title="Chat While in a Meeting"
+                        data-tool-message="The chat room is available during a single session and stores messages until all participates leave the meeting. It is useful when sharing information such as URLs or contact numbers while in a meeting."
+                    >
+                        <span class="icon chat"></span>
+                        <span class="left-links">Chat</span>
+                    </div>
+                    <div
+                        class="meeting-button" 
+                        data-toggle="modal" 
+                        data-target="#tooltip-message"
+                        data-tool-title="Start Recording"
+                        data-tool-message="Recordings will automatically start when you commence the signing process. You can start the recording at any time. Recording is a great feature to maintain meeting minutes and is also good to confirm agreement during negotiations. If a colleague is not able to make the meeting then video recording ensures everyone is on the same page. Selective recordings can be sent from your meeting bubble but will be destroyed within 24 hours. Based on acceptance these recordings can not be used in court. Recordings can be accessed during or after a meeting."
+                    >
+                        <span class="icon startrec"></span>
+                        <span class="left-links">Start Recording</span>
+                    </div>
+                    <div
+                        class="meeting-button" 
+                        data-toggle="modal" 
+                        data-target="#tooltip-message"
+                        data-tool-title="Refresh"
+                        data-tool-message="If at any time during your meeting things might not be working like you think we always recommend the refresh to reset the system."
+                    >
+                        <span class="icon refresh"></span>
+                        <span class="left-links">Refresh</span>
+                    </div>
+                    <div
+                        class="meeting-button" 
+                        data-toggle="modal" 
+                        data-target="#tooltip-message"
+                        data-tool-title="Run Meeting Health Check"
+                        data-tool-message="It is always recommended to do an internet test and at the same time check what devices you will be using during the meeting. The health check will instruct you weather you have the right setup for a successful meeting."
+                    >
+                        <span class="icon healthcheck"></span>
+                        <span class="left-links">Run Meeting Health Check</span>
+                    </div>
+                    <div
+                        class="meeting-button"
+                        data-toggle="modal" 
+                        data-target="#tooltip-message"
+                        data-tool-title="Test Devices"
+                        data-tool-message="During this process the system will tell you if your camera and microphone is working correctly for a successful meeting. It is always important to double check your camera settings."
+                    >
+                        <span class="icon devices"></span>
+                        <span class="left-links">Test Devices</span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="exit-meeting">
+                <div class="items">
+                    <div
+                        class="meeting-button"
+                        data-toggle="modal" 
+                        data-target="#tooltip-message"
+                        data-tool-title="Leave Meeting"
+                        data-tool-message="Once your meeting is over you can click leave or close the tab in your browser. Remember this is a permanent room so you can re-join at any time."
+                    >
+                        <span class="icon logout"></span>
+                        <span class="left-links">Leave Meeting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Document Tool menu -->
+        <div class="tool-menu hide-element">
+            <h2 class="document-name">ANZ Mortgage Loan Application.pdf</h2>
+
+            <span class="tag">SIGNEES</span>
+            <div 
+                class="btn-tool-menu doc-tooltip"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="General Tag"
+                data-tool-message="This is a very useful feature if you need to sign in several locations within a single document."
+            >
+                General Tag
+            </div>
+            <div class="btn-tool-menu">
+                Thomas Holt
+            </div>
+            <div class="btn-tool-menu">
+                Amanda Jones
+            </div>
+            <div class="btn-tool-menu">
+                Steven Thompson
+            </div>
+            <div class="btn-tool-menu">
+                Sharon Teague
+            </div>
+            <div class="btn-tool-menu">
+                Sarah Lambert
+            </div>
+            <div class="btn-tool-menu">
+                Prev Signature
+            </div>
+            <div class="btn-tool-menu">
+                Next Signature
+            </div>
+
+            <span class="tag">ADD</span>
+            <div 
+                class="btn-tool-menu doc-tooltip"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Add Signature"
+                data-tool-message="You will be given the option to sign in a number of different ways. You can use a saved signature or type your name which is also legally accepted. When you use this signing function you will be recorded so your identity can be verified. To ensure maximum compliance your meta data will be recorded and added to the PDF for security. Your signature and metadata can not be deleted from the encrypted PDF."
+            >
+                Add Signature
+            </div>
+            <div 
+                class="btn-tool-menu doc-tooltip"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Add Initials"
+                data-tool-message="You can use add your initials to a document and are able to sign once and then place on other pages within the document."
+            >
+                Add Initials
+            </div>
+            <div 
+                class="btn-tool-menu doc-tooltip"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Add Text"
+                data-tool-message="You can add text to any document. This is often used to place the date on agreements or forms."
+            >
+                Add Text
+            </div>
+            <div 
+                class="btn-tool-menu doc-tooltip"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Add File"
+                data-tool-message="You can add any image to a document the most popular is a photo ID for verification. This function allows you to add a drivers licence or passport image for identification."
+            >
+                Add File
+            </div>
+
+            <span class="tag">DOCUMENT</span>
+            <div 
+                class="btn-tool-menu doc-tooltip"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Complete your Document"
+                data-tool-message="Once you complete a signing process you must always push complete to save your signatures. The host will then finalise the document which embeds the digital certificate. The document will then be placed into the signed document folder."
+            >
+                Complete
+            </div>
+            <div 
+                class="btn-tool-menu doc-tooltip close-document"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Close"
+                data-tool-message="It is always best to close the document after a signing process and before accessing other features in your Virtual Office."
+                style="margin-bottom: 30px;"
+            >
+                Close
+            </div>
+        </div>
+
+        <!-- Center Panel -->
+        <div class="center-panel">
+            <div>
+                <div class="meeting-date">
+                    Scheduled 25 March 2020 1:00 pm
+                </div>
+                <div class="meeting-timer">
+                    0:00
+                </div>
+            </div>
+            <div class="meeting-title">
+                Getting Started with VideoSign
+            </div>
+
+            <video src="assets/video.mp4" type="video/mp4" id="myvideo">
+            </video>
+                
+            <div class="view-doc-container">
+                <span style="display: block; margin-bottom: 30px;">
+                    You can explore the features of your Virtual Office by rolling over the buttons.
+                </span>
+                <button class="btn-open-doc" id="open-document">
+                    View Document
+                </button>
+                <span style="display: block; margin-top: 30px;">
+                    <img src="assets/chrome-logo.png" alt="Please use Google Chrome" style="width:35px; margin-right: 10px;"> We strongly recommend the use of Google Chrome. 
+                    <a href="https://www.google.com/chrome/" target="_blank">Download now.</a>
+                </span>
+            </div>
+        </div>
+
+        <!-- Document View -->
+        <div class="doc-view hide-element">
+            <iframe src="anz-loan-application.pdf#view=FitH"></iframe>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <div class="webcam-grid">
+                <div class="first-cam">
+                    <div class="name-label">
+                        Thomas Holt
+                    </div>
+                </div>
+                <div class="second-cam">
+                    <div class="name-label">
+                        Amanda J...
+                    </div>
+                </div>
+                <div class="third-cam">
+                    <div class="name-label">
+                        Steven T...
+                    </div>
+                </div>
+                <div class="fourth-cam">
+                    <div class="name-label">
+                        Sharon T...
+                    </div>
+                </div>
+                <div class="fifth-cam">
+                    <div class="name-label">
+                        Sarah L...
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn-close-doc close-document hide-element">
+                Close Document
+            </button>
+
+            <button class="btn-close-doc close-document hide-element">
+                Give Control
+            </button>
+        </div>
+    </div>
+
+    <div class="stream-control-menu">
+        <div class="toggle-stream-controls" id="toggle-media-controls"><div class="bar"></div></div>
+        <div class="stream-controls">
+            <div 
+                class="stream-control-option blue-icon"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Screensharing"
+                data-tool-message="The Screen sharing feature is the most popular feature in most video conference systems it will enable  you to share anything on your computer with your participants. It is very important that you carefully select which windows you wish to share. To make it even easier to view the participants have the option to click on what you are sharing to display this full screen. You must have control in order to share this feature."
+            >
+                <div class="screenshare-icon"></div>
+            </div>
+            <div 
+                class="stream-control-option green-icon"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Toggle Audio and Video"
+                data-tool-message="You have full control to turn on or off audio and video functions during a meeting this is an important feature to ensure your meeting runs smoothly. It is also recommended to use the test devices if you are having a problem seeing or hearing yourself."
+            >
+                <div class="mic-icon"></div>
+            </div>
+            <div 
+                class="stream-control-option green-icon"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Toggle Audio and Video"
+                data-tool-message="You have full control to turn on or off audio and video functions during a meeting this is an important feature to ensure your meeting runs smoothly. It is also recommended to use the test devices if you are having a problem seeing or hearing yourself."
+            >
+                <div class="cam-icon"></div>
+            </div>
+            <div 
+                class="stream-control-option blue-icon"
+                data-toggle="modal" 
+                data-target="#tooltip-message"
+                data-tool-title="Switch Cameras"
+                data-tool-message="If you have multiple cameras you are able to use this feature to switch the view of what you want people to see."
+            >
+                <div class="switch-cam-icon"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-warning-message">
+        <div class="page-section" id="tutorial" style="text-align:center; padding-top: 25px;">
+            <div class="container">
+                <a href="index.html"><img class="logo-image mb-5" src="assets/videosign-logo.png" alt="VideoSign Logo"></a>
+                <div class="col-md-12">
+                    <div id="tutorialSlides" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100"
+                                    alt="First slide [800x400]"
+                                    src="assets/sbx-tutorial/start-meeting.png">
+                                <div class="carousel-caption d-md-block">
+                                    <h5>1. Start Meeting</h5>
+                                    <p>Join your secure, online meeting room.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                    alt="Second slide [800x400]"
+                                    src="assets/sbx-tutorial/upload-document.png">
+                                <div class="carousel-caption d-md-block">
+                                    <h5>2. Upload a Document</h5>
+                                    <p>Upload a document to your meeting room.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                    alt="Third slide [800x400]"
+                                    src="assets/sbx-tutorial/open-document.png">
+                                <div class="carousel-caption d-md-block">
+                                    <h5>3. View Documents</h5>
+                                    <p>View and discuss the document with your participants.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                    alt="First slide [800x400]"
+                                    src="assets/sbx-tutorial/sign-methods.png">
+                                <div class="carousel-caption d-md-block">
+                                    <h5>4. Sign Document</h5>
+                                    <p>Sign the document by using either a saved, drawn or typed signature.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                    alt="Second slide [800x400]"
+                                    src="assets/sbx-tutorial/browse.png">
+                                <div class="carousel-caption d-md-block">
+                                    <h5>5. Confirm Signature</h5>
+                                    <p>Verify that your signature, name and date are correct.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                    alt="Third slide [800x400]"
+                                    src="assets/sbx-tutorial/place-signature.png">
+                                <div class="carousel-caption d-md-block">
+                                    <h5>6. Place Signature</h5>
+                                    <p>Place your signature at the desired position on the document.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#tutorialSlides" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#tutorialSlides" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <span style="display: block; margin-top: 5px;">
+                    <img src="assets/chrome-logo.png" alt="Please use Google Chrome" style="width:35px; margin-right: 10px;"> We strongly recommend the use of Google Chrome. 
+                    <a href="https://www.google.com/chrome/" target="_blank">Download now.</a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tooltip Modal -->
+    <div id="tooltip-message" class="modal" tabindex="-1" role="dialog" data-backdrop="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+            </div>
+            <div class="modal-body">
+                <p></p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/videosign.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
