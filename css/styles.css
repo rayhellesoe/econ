@@ -10240,11 +10240,11 @@ header.masthead h1 {
 }
 
 .light-link{
-  color: #fff;
+  color: rgba(255,255,255,0.75);
 }
 
 .light-link:hover, .light-link:focus{
-  color: rgba(255,255,255, 0.75);
+  color: rgba(255,255,255, 1);
 }
 
 .sticky-footer{
