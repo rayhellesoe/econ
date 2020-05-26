@@ -90,7 +90,7 @@ iframe {
 
 .items {
   padding-left: 5%;
-  margin-top: 13px;
+  margin-top: 6%;
 }
 
 .left-links {
@@ -126,6 +126,8 @@ iframe {
 
 .tosign {
   content: url(../assets/sbxicons/icons-edit.svg);
+  margin-left: 2px;
+  margin-right: -2px;
 }
 
 .toread {
@@ -142,6 +144,9 @@ iframe {
 
 .chat {
   content: url(../assets/sbxicons/icons-chat.svg);
+  width: 20px;
+  margin-right: calc(21px - 20px);
+  margin-left: 3px;
 }
 
 .startrec {
@@ -150,6 +155,9 @@ iframe {
 
 .refresh {
   content: url(../assets/sbxicons/icons-refresh.svg);
+  width: 16px;
+  margin-right: calc(21px - 16px);
+  margin-left: 3px;
 }
 
 .healthcheck {
@@ -164,11 +172,14 @@ iframe {
 
 .logout {
   content: url(../assets/sbxicons/icons-exit.svg);
+  width: 18px;
+  margin-right: calc(21px - 18px);
+  margin-left: 3px;
 }
 
-.tools {
+/* .tools {
   min-height: calc(1vh * 45);
-}
+} */
 
 @media (max-height: 830px) {
   .tools {
@@ -223,7 +234,7 @@ iframe {
   border-radius: 2px;
   background-color: black;
   margin-top: 8px;
-  padding-top: 3%;
+  padding-top: 3.5%;
   text-align: center;
   cursor: pointer;
   border-radius: 3px;
@@ -354,11 +365,29 @@ iframe {
   row-gap: 19px
 }
 
+#first-tag, #second-tag, #third-tag, #fourth-tag, #fifth-tag {
+  position: relative
+}
+
 .first-cam {
   grid-column: 1 / 3;
   grid-row: 1;
   height:30.45vh;
   background: url("../assets/interactive/first-ppt.png") !important;
+}
+
+.first-cam::before, #first-tag::before {
+  background-color: #f0932b;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 25px;
+  left: 7px;
+  top: -2px;
+  z-index: 999;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.67);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.67);
 }
 
 .second-cam {
@@ -367,10 +396,38 @@ iframe {
   background: url("../assets/interactive/second-ppt.png") !important;
 }
 
+.second-cam::before, #second-tag::before {
+  background-color: #f9ca24;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 25px;
+  left: 7px;
+  top: -2px;
+  z-index: 999;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.67);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.67);
+}
+
 .third-cam {
   grid-column: 2;
   grid-row: 2;
   background: url("../assets/interactive/third-ppt.png") !important;
+}
+
+.third-cam::before, #third-tag::before {
+  background-color: #eb4d4b;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 25px;
+  left: 7px;
+  top: -2px;
+  z-index: 999;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.67);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.67);
 }
 
 .fourth-cam {
@@ -379,10 +436,38 @@ iframe {
   background: url("../assets/interactive/fourth-ppt.png") !important;
 }
 
+.fourth-cam::before, #fourth-tag::before {
+  background-color: #6ab04c;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 25px;
+  left: 7px;
+  top: -2px;
+  z-index: 999;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.67);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.67);
+}
+
 .fifth-cam {
   grid-column: 2;
   grid-row: 3;
   background: url("../assets/interactive/fifth-ppt.png") !important;
+}
+
+.fifth-cam::before, #fifth-tag::before {
+  background-color: #e056fd;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 25px;
+  left: 7px;
+  top: -2px;
+  z-index: 999;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.67);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.67);
 }
 
 .cam {
@@ -564,4 +649,9 @@ iframe {
   .mobile-warning-message {
     display:block;
   }
+}
+
+.divider-panel {
+  min-height: calc(1vh*1.04);
+  margin-bottom: 5%;
 }

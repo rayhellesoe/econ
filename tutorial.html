@@ -32,7 +32,7 @@
                 <a href="index.html"><img class="logo-image" src="assets/videosign-logo.png" alt="eContract Logo"></a>
             </div>
             <div class="meeting-resources">
-                <h3 class="menu-heading">MEETING RESOURCES</h3>
+                <h3 class="menu-heading">DOCUMENTS</h3>
                 <div class="items">
                     <div
                         class="meeting-button" 
@@ -42,7 +42,7 @@
                         data-tool-message="You can upload PDF documents to sign or read but need to ensure you have control before using this feature. When you click upload document a dialogue box will ask weather you need to sign or read the document. You are then able to browse your drive to select the PDF document you wish to share. Once uploaded you then need to access the document from either the document to sign or document to read buttons."
                     >
                         <span class="icon upload"></span>
-                        <span class="left-links">Upload Document</span>
+                        <span class="left-links">Upload</span>
                     </div>
                     <div
                         class="meeting-button" 
@@ -52,7 +52,7 @@
                         data-tool-message="You can only sign PDF documents. You are able to upload upto 10 documents  during a single upload but it is recommended to do one at a time. It is also best to pre-plan where you would like to store the document after signing."
                     >
                         <span class="icon tosign"></span>
-                        <span class="left-links">Documents to Sign</span>
+                        <span class="left-links">To be signed</span>
                     </div>
                     <div
                         class="meeting-button" 
@@ -62,7 +62,7 @@
                         data-tool-message="You can upload 10 documents at once but it is recommended to do one at a time. It is also best to pre-plan where you would like to store the document after reading. You can upload a document anytime for other participates to read at their convenience. You can create video minutes from documents you are reviewing and leave these recordings in the room for other participates to view."
                     >
                         <span class="icon toread"></span>
-                        <span class="left-links">Documents to Read</span>
+                        <span class="left-links">To read</span>
                     </div>
                     <div
                         class="meeting-button" 
@@ -73,7 +73,23 @@
                         style="margin-top: -1px;"
                     >
                         <span class="icon signed"></span>
-                        <span class="left-links">Signed Document</span>
+                        <span class="left-links">Finalised</span>
+                    </div>
+                </div>
+            </div>
+            <div class="divider-panel"></div>
+            <div class="exit-meeting">
+                <h3 class="menu-heading">VIDEO</h3>
+                <div class="items">
+                    <div
+                        class="meeting-button" 
+                        data-toggle="modal" 
+                        data-target="#tooltip-message"
+                        data-tool-title="Start Recording"
+                        data-tool-message="Recordings will automatically start when you commence the signing process. You can start the recording at any time. Recording is a great feature to maintain meeting minutes and is also good to confirm agreement during negotiations. If a colleague is not able to make the meeting then video recording ensures everyone is on the same page. Selective recordings can be sent from your meeting bubble but will be destroyed within 24 hours. Based on acceptance these recordings can not be used in court. Recordings can be accessed during or after a meeting."
+                    >
+                        <span class="icon startrec"></span>
+                        <span class="left-links">Start Recording</span>
                     </div>
                     <div
                         class="meeting-button" 
@@ -87,9 +103,9 @@
                     </div>
                 </div>
             </div>
-            <hr>
+            <div class="divider-panel"></div>
             <div class="tools">
-                <h3 class="menu-heading">TOOLS</h3>
+                <h3 class="menu-heading">SYSTEM</h3>
                 <div class="items">
                     <div
                         class="meeting-button" 
@@ -105,11 +121,21 @@
                         class="meeting-button" 
                         data-toggle="modal" 
                         data-target="#tooltip-message"
-                        data-tool-title="Start Recording"
-                        data-tool-message="Recordings will automatically start when you commence the signing process. You can start the recording at any time. Recording is a great feature to maintain meeting minutes and is also good to confirm agreement during negotiations. If a colleague is not able to make the meeting then video recording ensures everyone is on the same page. Selective recordings can be sent from your meeting bubble but will be destroyed within 24 hours. Based on acceptance these recordings can not be used in court. Recordings can be accessed during or after a meeting."
+                        data-tool-title="Run Meeting Health Check"
+                        data-tool-message="It is always recommended to do an internet test and at the same time check what devices you will be using during the meeting. The health check will instruct you weather you have the right setup for a successful meeting."
                     >
-                        <span class="icon startrec"></span>
-                        <span class="left-links">Start Recording</span>
+                        <span class="icon healthcheck"></span>
+                        <span class="left-links">Health Check</span>
+                    </div>
+                    <div
+                        class="meeting-button"
+                        data-toggle="modal" 
+                        data-target="#tooltip-message"
+                        data-tool-title="Test Devices"
+                        data-tool-message="During this process the system will tell you if your camera and microphone is working correctly for a successful meeting. It is always important to double check your camera settings."
+                    >
+                        <span class="icon devices"></span>
+                        <span class="left-links">Settings</span>
                     </div>
                     <div
                         class="meeting-button" 
@@ -121,31 +147,6 @@
                         <span class="icon refresh"></span>
                         <span class="left-links">Refresh</span>
                     </div>
-                    <div
-                        class="meeting-button" 
-                        data-toggle="modal" 
-                        data-target="#tooltip-message"
-                        data-tool-title="Run Meeting Health Check"
-                        data-tool-message="It is always recommended to do an internet test and at the same time check what devices you will be using during the meeting. The health check will instruct you weather you have the right setup for a successful meeting."
-                    >
-                        <span class="icon healthcheck"></span>
-                        <span class="left-links">Run Meeting Health Check</span>
-                    </div>
-                    <div
-                        class="meeting-button"
-                        data-toggle="modal" 
-                        data-target="#tooltip-message"
-                        data-tool-title="Test Devices"
-                        data-tool-message="During this process the system will tell you if your camera and microphone is working correctly for a successful meeting. It is always important to double check your camera settings."
-                    >
-                        <span class="icon devices"></span>
-                        <span class="left-links">Test Devices</span>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="exit-meeting">
-                <div class="items">
                     <div
                         class="meeting-button"
                         data-toggle="modal" 
@@ -162,10 +163,10 @@
 
         <!-- Document Tool menu -->
         <div class="tool-menu hide-element">
-            <h2 class="document-name">ANZ Mortgage Loan Application.pdf</h2>
+            <!-- <h2 class="document-name">ANZ Direct Online Application.pdf</h2> -->
 
-            <span class="tag">SIGNEES</span>
-            <div 
+            <span class="tag">SIGNATURE TAGS</span>
+            <!-- <div 
                 class="btn-tool-menu doc-tooltip"
                 data-toggle="modal" 
                 data-target="#tooltip-message"
@@ -173,27 +174,27 @@
                 data-tool-message="This is a very useful feature if you need to sign in several locations within a single document."
             >
                 General Tag
-            </div>
-            <div class="btn-tool-menu">
+            </div> -->
+            <div class="btn-tool-menu" id="first-tag">
                 Thomas Holt
             </div>
-            <div class="btn-tool-menu">
+            <div class="btn-tool-menu" id="second-tag">
                 Amanda Jones
             </div>
-            <div class="btn-tool-menu">
+            <div class="btn-tool-menu" id="third-tag">
                 Steven Thompson
             </div>
-            <div class="btn-tool-menu">
+            <div class="btn-tool-menu" id="fourth-tag">
                 Sharon Teague
             </div>
-            <div class="btn-tool-menu">
+            <div class="btn-tool-menu" id="fifth-tag">
                 Sarah Lambert
             </div>
+            <!-- <div class="btn-tool-menu">
+               Save Tags
+            </div> -->
             <div class="btn-tool-menu">
-                Prev Signature
-            </div>
-            <div class="btn-tool-menu">
-                Next Signature
+                Save Changes
             </div>
 
             <span class="tag">ADD</span>
@@ -204,7 +205,7 @@
                 data-tool-title="Add Signature"
                 data-tool-message="You will be given the option to sign in a number of different ways. You can use a saved signature or type your name which is also legally accepted. When you use this signing function you will be recorded so your identity can be verified. To ensure maximum compliance your meta data will be recorded and added to the PDF for security. Your signature and metadata can not be deleted from the encrypted PDF."
             >
-                Add Signature
+                Signature
             </div>
             <div 
                 class="btn-tool-menu doc-tooltip"
@@ -213,7 +214,7 @@
                 data-tool-title="Add Initials"
                 data-tool-message="You can use add your initials to a document and are able to sign once and then place on other pages within the document."
             >
-                Add Initials
+                Initials
             </div>
             <div 
                 class="btn-tool-menu doc-tooltip"
@@ -222,7 +223,7 @@
                 data-tool-title="Add Text"
                 data-tool-message="You can add text to any document. This is often used to place the date on agreements or forms."
             >
-                Add Text
+                Text
             </div>
             <div 
                 class="btn-tool-menu doc-tooltip"
@@ -231,7 +232,7 @@
                 data-tool-title="Add File"
                 data-tool-message="You can add any image to a document the most popular is a photo ID for verification. This function allows you to add a drivers licence or passport image for identification."
             >
-                Add File
+                File
             </div>
 
             <span class="tag">DOCUMENT</span>
@@ -239,10 +240,10 @@
                 class="btn-tool-menu doc-tooltip"
                 data-toggle="modal" 
                 data-target="#tooltip-message"
-                data-tool-title="Complete your Document"
-                data-tool-message="Once you complete a signing process you must always push complete to save your signatures. The host will then finalise the document which embeds the digital certificate. The document will then be placed into the signed document folder."
+                data-tool-title="Download Document"
+                data-tool-message="Download documents from your meeting room at any time."
             >
-                Complete
+                Download
             </div>
             <div 
                 class="btn-tool-menu doc-tooltip close-document"
@@ -252,7 +253,7 @@
                 data-tool-message="It is always best to close the document after a signing process and before accessing other features in your Virtual Office."
                 style="margin-bottom: 30px;"
             >
-                Close
+                Save & Close
             </div>
         </div>
 
@@ -286,7 +287,7 @@
 
         <!-- Document View -->
         <div class="doc-view hide-element">
-            <iframe src="anz-loan-application.pdf#view=FitH"></iframe>
+            <iframe src="ANZ-Direct-Online-Application.pdf#view=FitH"></iframe>
         </div>
 
         <!-- Right Panel -->
