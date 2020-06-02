@@ -25,6 +25,19 @@
 </head>
 
 <body>
+    <div class="modal-container" style="display: none;">
+        <div class="popup-modal">
+            Please select a signing method
+            <ul class="signing-method-list">
+                <hr>
+                <li class="sign-option">Draw</li>
+                <hr>
+                <li class="sign-option">Browse</li>
+                <hr>
+                <li class="sign-option">Text</li>
+            </ul>
+        </div>
+    </div>
     <!-- Left Panel -->
     <div class="meeting-grid">
         <div class="left-panel no-float">
@@ -199,7 +212,7 @@
 
             <span class="tag">ADD</span>
             <div 
-                class="btn-tool-menu doc-tooltip"
+                class="btn-tool-menu doc-tooltip sign-button"
                 data-toggle="modal" 
                 data-target="#tooltip-message"
                 data-tool-title="Add Signature"

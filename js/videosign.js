@@ -13,11 +13,13 @@ $(document).ready(function () {
         $('.modal-title').html(title)
         $('.modal-body').html(message)
         $("#tooltip-message").modal('show')
+        $(".view-doc-container").addClass('quarter-opacity')
     })
 
     $(".meeting-button").mouseleave((e) => {
         $(e.currentTarget).css("font-weight", "400")
         $("#tooltip-message").modal('hide')
+        $(".view-doc-container").removeClass('quarter-opacity')
     })
 
     // Tooltips for Document and Media Controls
@@ -29,10 +31,12 @@ $(document).ready(function () {
         $('.modal-title').html(title)
         $('.modal-body').html(message)
         $("#tooltip-message").modal('show')
+        $(".view-doc-container").addClass('quarter-opacity')
     })
 
     $(".doc-tooltip, .stream-control-option").mouseleave((e) => {
         $("#tooltip-message").modal('hide')
+        $(".view-doc-container").removeClass('quarter-opacity')
     })
 
     // Controls for opening and closing document
@@ -41,7 +45,6 @@ $(document).ready(function () {
         $(".meeting-button").css("text-align", "right")
         $(".doc-view, .tool-menu").removeClass("hide-element")
         $(".meeting-grid").addClass("doc-view-enabled")
-        $("hr").addClass("half-hr")
         $(".btn-close-doc").removeClass("hide-element")
         $(".btn-control").addClass("btn-control-doc-open")
     })
@@ -51,7 +54,6 @@ $(document).ready(function () {
         $(".meeting-button").css("text-align", "left")
         $(".doc-view, .tool-menu").addClass("hide-element")
         $(".meeting-grid").removeClass("doc-view-enabled")
-        $("hr").removeClass("half-hr")
         $(".btn-close-doc").addClass("hide-element")
         $(".btn-control").removeClass("btn-control-doc-open")
     })
@@ -74,19 +76,51 @@ $(document).ready(function () {
         $('.modal-title').html("Give and Take Control")
         $('.modal-body').html("This feature controls your Virtual Office you need to remember that you have to give control or take control to access any of the features in your room. Even when you join the room you have to take control before preforming features like upload document.")
         $("#tooltip-message").modal('show')
+        $(".view-doc-container").addClass('quarter-opacity')
     })
 
     $(".btn-control").mouseleave(function(){
         $("#tooltip-message").modal('hide')
+        $(".view-doc-container").removeClass('quarter-opacity')
     })
 
     $(".cam").mouseenter(function(){
         $('.modal-title').html("Upto 5 Live Cameras")
         $('.modal-body').html("VideoSign accommodates for up to 5 people within your Virtual Office. You will always appear small to yourself and big to others in your room. You can always turn off you video if it is not appropriate or you have a poor internet connection. Once you have created a VideoSign workspace you can use it anytime you like. The host does not need to be present and in this case other invitees can meet each other at anytime. When documents are uploaded everyone in your room will be notified by email.")
         $("#tooltip-message").modal('show')
+        $(".view-doc-container").addClass('quarter-opacity')
     })
 
     $(".cam").mouseleave(function(){
         $("#tooltip-message").modal('hide')
+        $(".view-doc-container").removeClass('quarter-opacity')
+    })
+
+    $(".sign-button").click(function(){
+        $(".modal-container").toggle();
+    })
+
+    $(".modal-container").click(function(){
+        $(".modal-container").toggle();
+    })
+
+    // Signing methods tooltips
+    $(".sign-option").mouseenter((e) => {
+        const myEl = e.currentTarget
+        const title = myEl.dataset.toolTitle
+        const message = myEl.dataset.toolMessage
+
+        $("#tooltip-message").addClass("sign-tooltip-zindex")
+        $(".modal-dialog").addClass("sign-tooltip-margin")
+
+        $('.modal-title').html(title)
+        $('.modal-body').html(message)
+        $("#tooltip-message").modal('show')
+    })
+
+    $(".sign-option").mouseleave((e) => {
+        $("#tooltip-message").modal('hide')
+        $("#tooltip-message").removeClass("sign-tooltip-zindex")
+        $(".modal-dialog").removeClass("sign-tooltip-margin")
     })
 })
