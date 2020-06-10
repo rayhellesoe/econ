@@ -148,12 +148,12 @@ sup {
 }
 
 a {
-  color: #27a8de;
+  color: #ed691d;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #2989b3;
+  color: #c95a19;
   text-decoration: underline;
 }
 
@@ -2447,18 +2447,18 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #27a8de;
-  border-color: #27a8de;
+  background-color: #ed691d;
+  border-color: #ed691d;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #2989b3;
-  border-color: #2989b3;
+  background-color: #c95a19;
+  border-color: #c95a19;
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #2989b3;
-  border-color: #2989b3;
+  background-color: #c95a19;
+  border-color: #c95a19;
   box-shadow: 0 0 0 0.2rem rgba(88, 188, 246, 0.5);
 }
 .btn-primary.disabled, .btn-primary:disabled {
@@ -2468,8 +2468,8 @@ fieldset:disabled a.btn {
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #2989b3;
-  border-color: #2989b3;
+  background-color: #c95a19;
+  border-color: #c95a19;
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(88, 188, 246, 0.5);
@@ -6129,7 +6129,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #27a8de !important;
+  background-color: #ed691d !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -9740,7 +9740,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #27a8de !important;
+  color: #ed691d !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9951,7 +9951,7 @@ html {
 hr.divider {
   max-width: 3.25rem;
   border-width: 0.2rem;
-  border-color: #27a8de;
+  border-color: #ed691d;
 }
 
 hr.light {
@@ -9994,10 +9994,10 @@ hr.light {
   padding: 0.75rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #27a8de;
+  color: #ed691d;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #27a8de !important;
+  color: #ed691d !important;
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -10015,7 +10015,7 @@ hr.light {
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #27a8de;
+    color: #ed691d;
   }
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
@@ -10028,20 +10028,21 @@ hr.light {
     color: #212529;
   }
   #mainNav.navbar-scrolled .navbar-brand:hover {
-    color: #27a8de;
+    color: #ed691d;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
     color: #212529;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
-    color: #27a8de;
+    color: #ed691d;
   }
 }
 
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background-color: #00a2e6;
+  /* background-color: #00a2e6; */
+  background-color: #ed691d;
   position: relative;
   /* background-image: url("../assets/img/masthead.png");
   background-position: right bottom;
@@ -10234,9 +10235,9 @@ header.masthead h1 {
 }
 
 #currency-options > .selected, #currency-options-sm > .selected {
-  color: #27a8de;
+  color: #ed691d;
   font-weight: 700;
-  border-bottom: 2px solid #27a8de;
+  border-bottom: 2px solid #ed691d;
 }
 
 .light-link{
@@ -10268,7 +10269,7 @@ header.masthead h1 {
 
 .login-btn {
   color: #fff !important;
-  background: #27a8de;  
+  background: #ed691d;  
   text-align: center;  
   padding: 10px 18px !important;  
   display: inline;
@@ -10277,7 +10278,7 @@ header.masthead h1 {
 }
 
 .login-btn:hover {
-  background-color: #2989b3;
+  background-color: #c95a19;
 }
 
 @media (max-width: 992px) {
@@ -10370,8 +10371,10 @@ header.masthead h1 {
   width: 100vw;
   position: absolute;
   bottom: 0;
-  right: 0;
-  background-image: url("../assets/img/masthead.png");
+  /* right: 0; */
+  right: 0px;
+  /* background-image: url("../assets/img/masthead.png");  */
+  background-image: url("../assets/img/mastheadalt.png"); 
   background-repeat: no-repeat;  
   background-position: bottom right;
   background-size: 130vh;
@@ -10384,7 +10387,7 @@ header.masthead h1 {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #e4e4e4;
+  background: #fff;
   padding-top: 6.9vh;
 }
 
@@ -10420,7 +10423,7 @@ header.masthead h1 {
 }
 
 .mast-btn-2 {
-  background: #008bd0;
+  background: #474747;
   color: #fff;
   margin: 0;
 }
