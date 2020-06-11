@@ -9973,7 +9973,7 @@ hr.light {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 
 #mainNav {
@@ -10353,8 +10353,8 @@ header.masthead h1 {
 .masthead-text {
   font-size: 20px !important;
   color: #000;
-  /* width: 35vw; */
-  margin-top: 8.5vh;
+  width: 570px;
+  margin-top: 3.5vh;
   font-weight: 300;
 }
 
@@ -10374,7 +10374,7 @@ header.masthead h1 {
   /* right: 0; */
   right: 0px;
   /* background-image: url("../assets/img/masthead.png");  */
-  background-image: url("../assets/img/mastheadalt.png"); 
+  background-image: url("../assets/img/mastheadalt2.png"); 
   background-repeat: no-repeat;  
   background-position: bottom right;
   background-size: 130vh;
@@ -10445,10 +10445,10 @@ header.masthead h1 {
   }
 
   header.masthead {
-    background: #0099dd;
+    background: #ed691d;
     padding-top: 6rem;
     padding-bottom: 0;
-    background-image: url("../assets/img/highlight-light.png");
+    /* background-image: url("../assets/img/highlight-light.png"); */
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 43.5vh;
@@ -10478,7 +10478,7 @@ header.masthead h1 {
   }
 
   .mast-btn-2 {
-    background: #008bd0;
+    background: #474747;
   }
 
   .masthead-subtitle, .masthead-title-tagline-sm {
