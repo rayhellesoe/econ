@@ -9973,7 +9973,7 @@ hr.light {
 }
 
 .page-section {
-  padding: 4rem 0;
+  padding: 3rem 0 1.5rem 0;
 }
 
 #mainNav {
@@ -10119,7 +10119,7 @@ header.masthead h1 {
 }
 
 .pricing-panel-img {
-  background: url('../assets/img/1-long.jpg');
+  background: url('../assets/img/1.jpg');
   background-size: cover;
   background-position: center;
   min-height: 400px;
@@ -10182,9 +10182,15 @@ header.masthead h1 {
   .pricing-panel-img, .subscribe-panel-img, .smallbusiness-panel-img {
     min-height:200px
   }
+
+  .pricing-panel-img {
+    background: url('../assets/img/1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
   
   .side-panel {
-    padding: 96px 15px !important;
+    padding: 56px 15px !important;
   }
 
   .smallbusiness-panel-img {
@@ -10466,7 +10472,7 @@ header.masthead h1 {
   }
 
   .mast-btn-1 {
-    background: #e96d2d;
+    background: #9a4921;
     color: #fff;
     margin: 0;
   }
