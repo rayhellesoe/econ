@@ -10261,7 +10261,7 @@ header.masthead h1 {
   left: 0px;
 }
 
-@media (max-height: 675px) {
+@media (max-height: 850px) {
   .sticky-footer {
     position: inherit;
   }
@@ -10380,7 +10380,7 @@ header.masthead h1 {
   /* right: 0; */
   right: 0px;
   /* background-image: url("../assets/img/masthead.png");  */
-  background-image: url("../assets/img/mastheadalt2.png"); 
+  background-image: url("../assets/img/masthead.png"); 
   background-repeat: no-repeat;  
   background-position: bottom right;
   background-size: 130vh;
@@ -10454,14 +10454,20 @@ header.masthead h1 {
     background: #ed691d;
     padding-top: 6rem;
     padding-bottom: 0;
-    /* background-image: url("../assets/img/highlight-light.png"); */
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 43.5vh;
+    height: 100vh;
   }
 
   .white-line {
     top: 77px;
+  }
+
+  .mobile-cta-section {
+    align-self: flex-end;
+    background: #fff;
+    padding: 30px 15px;
   }
 
   .mast-btn-1, .mast-btn-2 {
@@ -10472,7 +10478,7 @@ header.masthead h1 {
   }
 
   .mast-btn-1 {
-    background: #9a4921;
+    background: #e96d2d;
     color: #fff;
     margin: 0;
   }
