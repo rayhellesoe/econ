@@ -10329,7 +10329,7 @@ header.masthead h1 {
 .masthead-content {
   z-index: 100;
   display: inline-block;
-  margin-top: 9vh;
+  margin-top: 19vh;
   padding-left: 10px;
 }
 
@@ -10343,9 +10343,9 @@ header.masthead h1 {
 }
 
 .masthead-title-tagline-l {
-  font-size: 6.5vw;
+  font-size: 4vw;
   font-weight: 700;
-  letter-spacing: -6px;
+  /* letter-spacing: -6px; */
 }
 
 .masthead-subtitle {
@@ -10434,6 +10434,30 @@ header.masthead h1 {
   margin: 0;
 }
 
+.why-videosign-container {
+  margin-top: 36px;
+}
+
+.why-videosign-btn {
+  margin-top: 1.875rem;
+  margin-bottom: 0;
+  background-color: #fff;
+  color: #ed7d0f;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: 0;
+  font-family: inherit;
+  padding: 1em 1.8em;
+  border-radius: .7rem;
+  transition: background-color 0.25s ease-out,color 0.25s ease-out;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem 0;
+}
+
 
 
 @media (max-width: 995px) {
@@ -10498,8 +10522,9 @@ header.masthead h1 {
   }
 
   .masthead-title-tagline-l {
-    font-size: 10.5vw;
-    letter-spacing: -3px;
+    font-size: 9.5vw;
+    /* letter-spacing: -3px; */
+    color: #fff;
   }
 
   .masthead-subtitle {
@@ -10513,7 +10538,7 @@ header.masthead h1 {
   }
   
   .masthead-title-tagline-l {
-    font-size: 5vw;
+    font-size: 3vw;
   }
 
   .masthead-subtitle {
